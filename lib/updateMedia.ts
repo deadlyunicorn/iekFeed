@@ -23,6 +23,7 @@ export const updateMedia = async(
         textContent: newEntry,
         discovery_date: new Date
       }))
+      .reverse();
 
 
     if ( newEntries.length > 0 ){
