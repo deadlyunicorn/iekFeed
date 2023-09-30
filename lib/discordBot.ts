@@ -1,6 +1,5 @@
-const channel = "1130821267314978972"
 
-export const botCall = async( { content } : { content: string } ) => {
+export const botCall = async( { content, channel } : { content: string, channel: string } ) => {
   
   const url = `https://discord.com/api/v10/channels/${channel}/messages`;
 
@@ -14,13 +13,11 @@ export const botCall = async( { content } : { content: string } ) => {
   });
 
   if ( messageSend.ok ){
-    console.log(' Channel successfully updated! ');
+    console.log(` Successfully sent '${content}' to the channel. `);
   }
   else{ 
-    throw ' There was an error sending the message';
+    throw ` There was an error sending '${content}'. `;
   }
-
-
   
 }
 
