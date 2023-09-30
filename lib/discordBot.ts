@@ -7,7 +7,7 @@ export const botCall = async( { content, channel } : { content: string, channel:
     method: "POST",
     headers:[
       ["Authorization",`Bot ${String(process.env.botToken)}`],
-      // ["Content-Type", "application/json"]
+      ["Content-Type", "application/json"]
     ],
     body: JSON.stringify( { content } )
   });
