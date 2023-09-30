@@ -27,7 +27,7 @@ const channel = "1143771465880191056";
           channel: channel
         } )
 
-        console.log( ` Successfully sent all new content! ` );
+        console.log( `Sucessfully got up to date` );
 
       }
       else{
@@ -53,7 +53,7 @@ const channel = "1143771465880191056";
   }
   else{
     console.error( `Couldn't get the feed.`);
-    console.timeEnd('Program run time');
+    console.timeEnd( 'Program run time' );
   }
 
 

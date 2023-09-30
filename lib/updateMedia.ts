@@ -11,7 +11,7 @@ export const updateMedia = async(
   }
   ) => {
 
-  const iek = client.db('iek').collection('feed');
+  const iek = client.db( 'iek' ).collection( 'feed' );
   const textArrayFromDatabase = latestDbDocuments.map( entry => entry.textContent ); 
 
   const newEntries: feedEntry[] = currentFeed

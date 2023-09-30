@@ -13,10 +13,10 @@ export const botCall = async( { content, channel } : { content: string, channel:
   });
 
   if ( messageSend.ok ){
-    console.log(` Successfully sent '${content}' to the channel. `);
+    console.log( `Successfully sent '${content}' to the channel.` );
   }
   else{ 
-    throw ` There was an error sending '${content}'. `;
+    throw `There was an error sending '${content}'` ;
   }
   
 }

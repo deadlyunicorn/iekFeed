@@ -9,7 +9,7 @@ export const getCurrentDatabase = async (
   
   ) => {
 
-  console.time('Getting database items');
+  console.time( 'Getting database items' );
 
   try{
     const iek = client.db('iek').collection('feed');
