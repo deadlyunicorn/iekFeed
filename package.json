@@ -1,6 +1,10 @@
 {
   "dependencies": {
+    "bun": "^1.0.3",
     "cheerio": "^1.0.0-rc.12",
     "mongodb": "^6.1.0"
+  },
+  "scripts": {
+    "start": "bun index.ts"
   }
 }
