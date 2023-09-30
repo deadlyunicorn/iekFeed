@@ -4,7 +4,7 @@ import { getCurrentDatabase } from "./lib/getDatabase";
 import { updateMedia } from "./lib/updateMedia";
 
 console.time( 'Program run time' );
-const channel = "1157504460394864640";
+const channel = "1143771465880191056";
 
 ( async()=>{
   
